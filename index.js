@@ -45,7 +45,8 @@ module.exports = async function(source) {
 
   let code = `
 import React from 'react'
-import mdx, { MDXTag } from '@mdx-js/tag'
+import { MDXTag } from '@mdx-js/tag'
+import {MDXProvider, mdx} from '@mdx-js/react'
 export const readingTime = ${JSON.stringify(estimatedReadingTime)}
 ${result}
 `
